@@ -4,7 +4,8 @@ var ajax = require('ajax');
 // Create a Card with title and subtitle
 var card = new UI.Card({
   title:'Quote',
-  subtitle:'Fetching...'
+  subtitle:'Fetching...',
+  scrollable: true
 });
 
 // Display the Card
@@ -16,7 +17,8 @@ ajax(
     type: 'json'
   },
   function(data) {
-    card.subtitle('Quote of the day is: ' + data.contents.quote);
+    card.subtitle('Quote of the day is: ');
+    card.body (data.contents.quote);
   },
   function(error) {
     card.body('The ajax failed...'+ error.error.message);
