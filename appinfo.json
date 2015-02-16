@@ -4,7 +4,7 @@
         ""
     ],
     "companyName": "stevegroves123@gmail.com",
-    "longName": "test of ajax",
+    "longName": "test of ajax function ",
     "projectType": "pebblejs",
     "resources": {
         "media": [
@@ -31,7 +31,7 @@
             }
         ]
     },
-    "shortName": "test of ajax",
+    "shortName": "QoD",
     "uuid": "12ac1ea5-450b-424d-ba4b-b3bbec1717d3",
     "versionCode": 1,
     "versionLabel": "1.5",

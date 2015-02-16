@@ -5,6 +5,7 @@ var ajax = require('ajax');
 var card = new UI.Card({
   title:'Quote',
   subtitle:'Fetching...',
+  Style: 'mono',
   scrollable: true
 });
 
