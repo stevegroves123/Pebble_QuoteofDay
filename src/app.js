@@ -17,7 +17,8 @@ ajax(
     type: 'json'
   },
   function(data) {
-    card.subtitle('Quote of the day is: ');
+    card.title('Quote of the day is: ');
+    card.subtitle (data.contents.author);
     card.body (data.contents.quote);
   },
   function(error) {
