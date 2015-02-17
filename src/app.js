@@ -5,7 +5,7 @@ var ajax = require('ajax');
 var card = new UI.Card({
   title:'Quote',
   subtitle:'Fetching...',
-  style: 'mono',
+  style: 'large',
   scrollable: true
 });
 
@@ -18,7 +18,7 @@ ajax(
     type: 'json'
   },
   function(data) {
-    card.title('Quote of the day is: ');
+    card.title('Today\'s quote is:\n');
     card.subtitle (data.contents.author);
     card.body (data.contents.quote);
   },
